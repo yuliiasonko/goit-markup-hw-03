@@ -1,0 +1,312 @@
+:root {
+--main-color:  #212121;
+--accent-color: #2196F3;
+}
+body {
+    color: var(--main-color);
+  }
+  
+  .address, .contacts {
+    font-style: normal;
+  }
+
+                        
+                             /*=======navigation=======*/
+
+.site-nav-list-link {
+    font-family:"Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: #212121;
+    text-decoration:none;
+}
+.site-nav-list-item{
+    list-style-type: none;}
+
+.site-nav-list-link.is-current  {
+    color: var(--accent-color);
+    text-decoration:none;    
+}
+.site-nav-list-link:hover,
+.site-nav-list-link:focus
+
+{
+color: var(--accent-color);
+}
+
+.logo-web{
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.385;
+    letter-spacing: 0.03em;
+    color: #2196F3;}
+.logo-s{
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.385;
+    letter-spacing: 0.03em;
+    color:var(--main-color);
+}
+
+.logo-link { 
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.385;
+    letter-spacing: 0.03em;
+    text-decoration:none;
+}
+
+.logo-link:hover,
+.logo-link:focus  
+{
+color: var(--accent-color);
+}
+
+                             /*=======contacts-top-page=======*/
+
+ .address-mail, .address-tel {
+    font-family:"Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: #757575;   
+    text-decoration:none;
+ }
+ .address-mail:hover, 
+ .address-mail:focus,
+ .address-tel:hover,
+ .address-tel:focus{
+color: var(--accent-color);
+ }
+                             /*=======contacts-down-page=======*/
+.footer{
+    width: 1600px;
+    height: 252px;
+    background: #2F303A;  
+}  
+ .footer-logo-web{
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.385;
+    letter-spacing: 0.03em;
+    color: #2196F3;}
+.footer-logo-s{
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.385;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+                            
+.footer-logo-link { 
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.385;
+    letter-spacing: 0.03em;
+    text-decoration:none;
+}
+                            
+.footer-logo-link:hover,
+.footer-logo-link:focus {
+    color: var(--accent-color);
+}
+
+.contacts-list-item{
+    list-style-type: none;}
+                            
+.contacts-list-link-mail,.contacts-list-link-tel {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.02em;
+    text-decoration:none;
+    color:rgba(255, 255, 255, 0.6);   
+}
+ .contacts-list-link-address{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.02em;
+    text-decoration:none;
+    color:#FFFFFF;   
+}
+.contacts-list-link-mail:focus,
+.contacts-list-link-mail:hover, 
+.contacts-list-link-tel:focus,
+.contacts-list-link-tel:hover,
+.contacts-list-link-address:hover,
+.contacts-list-link-address:focus{
+    color: var(--accent-color);
+}                             
+ 
+                               /*=======PORTFOLIO=======*/
+
+                              /*=======filters=======*/
+                           
+.filters-products-btn,.filters-sites-btn,.filters-app-btn,
+.filters-design-btn,.filters-marketing-btn{
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    color: var(--main-color);
+}
+
+.filters-products-btn:focus,.filters-products-btn:hover,
+.filters-sites-btn:focus,.filters-sites-btn:hover,
+.filters-app-btn:focus, .filters-app-btn:hover,
+.filters-design-btn:focus,.filters-design-btn:hover,
+.filters-marketing-btn:focus, .filters-marketing-btn:hover{
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+
+.filters-list-item{
+    list-style-type: none;}
+                             
+                             /*=======products-types=======*/
+ .products-types-img-link{
+    text-decoration:none;
+ }
+ .products-title{
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-color);
+ }           
+ 
+ .products-types-definition{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.185;
+    letter-spacing: 0.03em;
+    color: #757575;
+ }
+ 
+ .products-types-list-item{
+    list-style-type: none;}
+
+
+
+                         /*=======MAIN-PAGE=======*/
+
+
+                         /*=======to-order=======*/
+
+
+.slogan-title{
+font-family: Roboto;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.364;
+letter-spacing: 0.06em;
+text-align: center;
+text-transform: uppercase;
+color: #757575;
+
+}
+.slogan-btn-order{
+font-family: Roboto;
+font-weight: 900;
+font-size: 16px;
+line-height: 1.875;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;}                 
+
+                             /*=======advantages=======*/
+
+.advantages-list-item {
+    list-style-type: none;}
+
+.advantages-list-title{
+font-family: Roboto;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.143;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #212121;}
+
+.advantages-description{
+font-family: Roboto;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.714;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+                              /*=======activity=======*/
+
+.activity-title{
+font-family: Roboto;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.167;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+.activity-list-item {
+    list-style-type: none;}
+
+                              /*=======team=======*/
+
+.team-title{
+font-family: Roboto;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.167;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+                              
+.team-list-item {
+    list-style-type: none;}
+.team-member-name{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}   
+
+.team-member-prof{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.188;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;    
+}                              
