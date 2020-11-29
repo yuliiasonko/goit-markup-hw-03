@@ -9,15 +9,18 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header">
+       <!--page-header-->
+<header class="header">
+
+<div class="header-container">
 
         <!--navigation-->
 
-        <nav class="site-nav">
+<nav class="site-nav">
     <a class="logo-link" href="./index.html" aria-label="логотип сайта">
     <span class="logo-web">Web</span><span class="logo-s">Studio</span> 
     </a>
-   
+  
    <ul class="site-nav-list">
        <li class="site-nav-list-item">
            <a class="site-nav-list-link is-current" href="#"> Студия</a>
@@ -32,23 +35,33 @@
         </nav> 
 
         <!--contacts-top-page-->
-        
+<div class="contact-container">       
         <address class="address">
            <a class="address-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
            <a class="address-tel" href="tel:+380961111111">+38 096 111 11 11</a>
        </address>  
-       </header>
+</header>
+</div> 
+
+</div>
+
     <main>
 
 <!--slogan-->
-<section class="slogan">
+<div class="slogan-container">
+
+<section class="slogan-section">
     <div class="slogan-space" >
         <h1 class="slogan-title" >Эффективные решения</br>для вашего бизнеса</h1> 
         <button class="slogan-btn-order" type="button">Заказать услугу</button>
     </div>   
 </section>
 
+</div>
+
 <!--advantages-->
+<div class="advantages-container">
+
 <section class="advantages-section">
     <h2 hidden class="advantages-title"> Наши преимущества</h2>
     
@@ -65,10 +78,12 @@
     <li class="advantages-list-item"><h3 class="advantages-list-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
     <p class="advantages-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
 </ul>
-
 </section>
 
+</div>
+
 <!--activity-->
+
 <section class="activity-section">
     <h2 class="activity-title">Чем мы занимаемся</h2>
     <ul class="activity-list">
@@ -85,8 +100,10 @@
 </section>
 
 <!--team-->
+
 <section class="team-section">
     <h2 class="team-title">Наша команда</h2>
+    <div class="team-section-container">
     <ul class="team-list">
         <li class="team-list-item">
             <img class="team-member-img" src="./images/team/demyanenko.jpg" alt="разработчик продукта" width="270" height="260" />
@@ -109,19 +126,22 @@
             <p class="team-member-prof" lang="en">UI Designer</p>
         </li>
     </ul>
+</div>
 </section>
+
 </main>
 
 <footer class="footer">
 
+   
     <!--logo-->
-
+<div class="footer-container">
     <a class="footer-logo-link" href="./index.html" aria-label="логотип сайта">
         <span class="footer-logo-web">Web</span><span class="footer-logo-s">Studio</span>
    </a>
 
      <!--contacts-down-page-->
-
+<div class="address-container">
     <address class="address">
     <ul class="contacts-list">
     <li class="contacts-list-item">
@@ -136,7 +156,9 @@
      </li>    
     </ul>
     </address>
-      
-    </footer>      
+</div>
+</div>     
+    </footer>  
+        
 </body>
 </html>
