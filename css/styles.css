@@ -1,3 +1,13 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: :inherit;
+}
+
 :root {
 --main-color:  #212121;
 --accent-color: #2196F3;
@@ -10,8 +20,39 @@ body {
     font-style: normal;
   }
 
-                        
+            /*======================-page-header======================*/
+.header{
+    background-color: #FFFFFF;
+    justify-content: flex-start;
+  
+}
+.header-container{
+    display:flex;
+    width: 1200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    border: 1px solid #ECECEC;
+}
+
+
                              /*=======navigation=======*/
+.site-nav{
+    display:flex;
+    justify-content: flex-start;
+    align-content:center;
+    align-items: center;
+}
+
+ .site-nav-list{
+     padding: 0;
+     margin: 0;
+     display: flex;
+     align-content:center;
+ }
+
+.site-nav-list-item:not(:last-child){
+    margin-right: 50px;
+}
 
 .site-nav-list-link {
     font-family:"Roboto";
@@ -36,6 +77,12 @@ body {
 color: var(--accent-color);
 }
 
+.site-nav-list-link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+
 .logo-web{
     font-family: "Raleway";
     font-weight: 700;
@@ -44,15 +91,21 @@ color: var(--accent-color);
     letter-spacing: 0.03em;
     color: #2196F3;}
 .logo-s{
+    margin-right: 93px;
+    
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
     line-height: 1.385;
     letter-spacing: 0.03em;
-    color:var(--main-color);
+    color:var(--main-color);    
 }
 
 .logo-link { 
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 17px;
+    
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
@@ -66,9 +119,17 @@ color: var(--accent-color);
 {
 color: var(--accent-color);
 }
+                             /*=======END-navigation=======*/
 
                              /*=======contacts-top-page=======*/
 
+.contact-container{
+    display:flex;
+    justify-content:flex-end;
+    align-content:center;
+    align-items: center;
+    margin-left: 331px;
+}
  .address-mail, .address-tel {
     font-family:"Roboto";
     font-weight: 500;
@@ -78,18 +139,31 @@ color: var(--accent-color);
     color: #757575;   
     text-decoration:none;
  }
+ .address-mail{
+    margin-right: 50px;}
  .address-mail:hover, 
  .address-mail:focus,
  .address-tel:hover,
  .address-tel:focus{
 color: var(--accent-color);
  }
-                             /*=======contacts-down-page=======*/
+                        /*=======END-contacts-top-page=======*/
+
+            /*======================END-page-header======================*/
+
+
+             /*======================page-footer======================*/
+                                /*=======logo=======*/
 .footer{
     width: 1600px;
-    height: 252px;
     background: #2F303A;  
-}  
+} 
+.footer-container{
+    display:block;
+    width: 1200px;
+    margin-left: 200px;
+    margin-right: 200px;
+} 
  .footer-logo-web{
     font-family: "Raleway";
     font-weight: 700;
@@ -107,6 +181,10 @@ color: var(--accent-color);
 }
                             
 .footer-logo-link { 
+    display: block;
+    padding-top: 60px;
+    width: 145px;
+
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
@@ -119,11 +197,24 @@ color: var(--accent-color);
 .footer-logo-link:focus {
     color: var(--accent-color);
 }
+                                      /*=======END-logo=======*/
 
+                                /*=======contacts-down-page=======*/
+
+.address-container{
+    padding-bottom: 51px;
+    margin-top: 20px;
+}
+.contacts-list{
+    padding: 0;
+    margin: 0;
+}                                
 .contacts-list-item{
     list-style-type: none;}
                             
 .contacts-list-link-mail,.contacts-list-link-tel {
+    display: block;
+    padding-bottom: 9px;
     font-family: "Roboto";
     font-weight: 400;
     font-size: 14px;
@@ -133,6 +224,8 @@ color: var(--accent-color);
     color:rgba(255, 255, 255, 0.6);   
 }
  .contacts-list-link-address{
+    display: block;
+    padding-bottom: 6px;
     font-family: "Roboto";
     font-weight: 400;
     font-size: 14px;
@@ -149,13 +242,56 @@ color: var(--accent-color);
 .contacts-list-link-address:focus{
     color: var(--accent-color);
 }                             
+                           /*=======END-contacts-down-page=======*/
+
+            /*======================END-page-footer======================*/
  
-                               /*=======PORTFOLIO=======*/
+
+
+                         /*============PORTFOLIO============*/
 
                               /*=======filters=======*/
-                           
+.products{
+    width: 1200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    justify-content: center;
+    align-content:center;
+    align-items: center; 
+}
+                              
+.filters-container{
+    min-width: 611px;
+    margin-top: 100px;
+    margin-bottom: 34px;
+    text-align: center;  
+    justify-content: center;
+    align-content:center;
+    align-items: center; 
+}
+
+.filters-list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-content:center;
+    justify-content: center;
+    align-content:center;
+    align-items: center; 
+   
+}
+
+.filters-list-item{
+    list-style-type: none;}
+
+.filters-list-item:not(:last-child){
+    margin-right: 8px;
+}
+                    
 .filters-products-btn,.filters-sites-btn,.filters-app-btn,
 .filters-design-btn,.filters-marketing-btn{
+    padding: 6px 22px;
+    min-width: 73px;
     font-family: "Roboto";
     font-weight: 500;
     font-size: 16px;
@@ -163,6 +299,7 @@ color: var(--accent-color);
     letter-spacing: 0.03em;
     border-radius: 4px;
     color: var(--main-color);
+    border: 1px solid transparent;
 }
 
 .filters-products-btn:focus,.filters-products-btn:hover,
@@ -175,15 +312,43 @@ color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
-
-
-.filters-list-item{
-    list-style-type: none;}
-                             
+                        
                              /*=======products-types=======*/
- .products-types-img-link{
+.product-container{
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.products-types-list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products-types-list-item{
+
+   list-style-type: none;
+   width: 370px;
+   margin-right: 30px;
+   margin-bottom: 30px;
+   border: 1px solid #EEEEEE;
+}
+.products-types-list-item:nth-child(3n){
+    margin-right: 0;
+}
+
+.products-types-list-item:nth-last-child(-n+3){
+    margin-bottom: 75px;
+}
+.products-types-img-link{
     text-decoration:none;
  }
+
  .products-title{
     font-family: "Roboto";
     font-weight: 700;
@@ -202,48 +367,82 @@ color: var(--accent-color);
     color: #757575;
  }
  
- .products-types-list-item{
-    list-style-type: none;}
 
 
 
-                         /*=======MAIN-PAGE=======*/
+                   /*============MAIN-PAGE============*/
 
 
                          /*=======to-order=======*/
 
+.slogan-container{
+width: 1600px;
+background-color: #2F303A;
+text-align: center;  
+justify-content: center;
+align-content:center;
+align-items: center; 
+}
+
 
 .slogan-title{
+padding-top: 200px;
+padding-right: 452px; 
+padding-left: 452px;
+margin-top: 0;   
+margin-bottom: 30; 
+width: 696px;
+
 font-family: Roboto;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.364;
 letter-spacing: 0.06em;
-text-align: center;
 text-transform: uppercase;
-color: #757575;
+color: #FFFFFF;
 
 }
 .slogan-btn-order{
+display: inline-block;
+padding: 10px 32px;
+min-width: 200px;
+margin-top:0;
+margin-bottom: 200px;
+
 font-family: Roboto;
 font-weight: 900;
 font-size: 16px;
 line-height: 1.875;
-display: flex;
 align-items: center;
-text-align: center;
 letter-spacing: 0.06em;
 color: #FFFFFF;
 
-background: #2196F3;
+background-color: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;}                 
 
                              /*=======advantages=======*/
+.advantages-container{
+    width: 1170px;
+    margin-top: 109px;
+    margin-right: 215px;
+    margin-left: 215px;
+    margin-bottom: 94px;
+}
+
+.advantages-list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
 
 .advantages-list-item {
-    list-style-type: none;}
-
+    list-style-type: none;
+    width: 270px;
+}
+.advantages-list-item:not(:last-child){
+    margin-right: 30px;
+}
 .advantages-list-title{
 font-family: Roboto;
 font-weight: 700;
@@ -263,8 +462,17 @@ color: #757575;
 }
 
                               /*=======activity=======*/
+.activity-section{
+width: 1170px;
+margin-right: 215px;
+margin-left: 215px;
+margin-top: 94px;
+margin-bottom: 94px;
+}
 
 .activity-title{
+min-width: 376px;
+margin-bottom: 50px;
 font-family: Roboto;
 font-weight: 700;
 font-size: 36px;
@@ -274,12 +482,33 @@ letter-spacing: 0.03em;
 color: #212121;
 }
 
+.activity-list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
 .activity-list-item {
-    list-style-type: none;}
+    list-style-type: none;
+}
+.activity-list-item:not(:last-child){
+    margin-right: 30px;
+}    
 
                               /*=======team=======*/
 
+.team-section{
+    width: 1600px;
+    background-color: #F5F4FA;
+ 
+}
+
 .team-title{
+padding-top: 94px;
+
+margin-top: 0;   
+margin-bottom: 50; 
+min-width: 264px; 
+
 font-family: Roboto;
 font-weight: 700;
 font-size: 36px;
@@ -288,15 +517,35 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
 }
-                              
+
+.team-section-container{
+    display: flex;
+    width: 1170px;
+    padding-bottom: 94px;
+    margin-right: 215px;
+    margin-left: 215px; 
+    text-align: center;    
+}
+.team-list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
 .team-list-item {
-    list-style-type: none;}
+    list-style-type: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-list-item:not(:last-child){
+    margin-right: 30px;
+}    
+
+
 .team-member-name{
     font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.188;
-    text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
 }   
@@ -306,7 +555,6 @@ color: #212121;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.188;
-    text-align: center;
     letter-spacing: 0.03em;
     color: #757575;    
 }                              
