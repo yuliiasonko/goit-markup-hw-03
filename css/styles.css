@@ -1,4 +1,11 @@
-
+html {
+    box-sizing: border-box;
+  }
+  *, 
+  *:before, 
+  *:after {
+    box-sizing: inherit;
+  }
 :root {
 --main-color:  #212121;
 --accent-color: #2196F3;
@@ -15,15 +22,16 @@ body {
 
 .header{
     background-color: #FFFFFF;
-    justify-content: flex-start; 
-}
+    width: 1600px;
+   }
 
 .header-container{
     display:flex;
-    width: 1200px;
+    width: 1600px;
     padding-left: 200px;
     padding-right: 200px;
     border: 1px solid #ECECEC;
+    
 }
 
 
@@ -72,7 +80,7 @@ color: var(--accent-color);
 .site-nav-list-link{
     display: block;
     padding-top: 32px;
-    padding-bottom: 24px;
+    padding-bottom: 32px;
 }
 
 .logo-web{
@@ -96,7 +104,7 @@ color: var(--accent-color);
 .logo-link { 
     display: block;
     padding-top: 24px;
-    padding-bottom: 17px;
+    padding-bottom: 25px;
     
     font-family: "Raleway";
     font-weight: 700;
@@ -117,12 +125,15 @@ color: var(--accent-color);
 
 .contact-container{
     display:flex;
-    justify-content:flex-end;
-    align-content:center;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: flex-end;
     margin-left: 331px;
+    
 }
  .address-mail, .address-tel {
+    padding: 0%;
+    margin: 0%;
     font-family:"Roboto";
     font-weight: 500;
     font-size: 14px;
@@ -132,7 +143,9 @@ color: var(--accent-color);
     text-decoration:none;
  }
  .address-mail{
-    margin-right: 50px;}
+    margin-right: 50px;
+    min-width: 135px;
+}
  .address-mail:hover, 
  .address-mail:focus,
  .address-tel:hover,
@@ -244,7 +257,7 @@ color: var(--accent-color);
 
                               /*=======filters=======*/
 .products{
-    width: 1200px;
+    width: 1600px;
     padding-left: 200px;
     padding-right: 200px;
     justify-content: center;
@@ -312,6 +325,9 @@ color: var(--accent-color);
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
+    justify-content: center;
+    align-content:center;
+    align-items: center; 
 }
 
 .products-types-list{
@@ -319,7 +335,6 @@ color: var(--accent-color);
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .products-types-list-item{
@@ -383,7 +398,7 @@ padding-right: 452px;
 padding-left: 452px;
 margin-top: 0;   
 margin-bottom: 30; 
-width: 696px;
+min-width: 696px;
 
 font-family: Roboto;
 font-weight: 900;
