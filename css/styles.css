@@ -2,9 +2,11 @@ html {
     box-sizing: border-box;
   }
   *, 
-  *:before, 
-  *:after {
+  *::before, 
+  *::after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
   }
 :root {
 --main-color:  #212121;
@@ -13,25 +15,55 @@ html {
 body {
     color: var(--main-color);
 }
-  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+} 
+
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+margin: 0;
+}
+
   .address, .contacts {
     font-style: normal;
+}
+ img{
+     display: block;
+ }
+
+.container{
+    width: 1200;
+    margin: 0 auto;
 }
 
             /*======================-page-header======================*/
 
 .header{
     background-color: #FFFFFF;
-    width: 1600px;
-   }
+    display:flex;
+    align-items: center;  
+    margin-right: auto;
+    margin-left: auto; 
+}
 
 .header-container{
     display:flex;
-    width: 1600px;
+    width: 1200;
     padding-left: 200px;
     padding-right: 200px;
-    border: 1px solid #ECECEC;
-    
+    border: 1px solid #ECECEC;  
+    margin-right: auto;
+    margin-left: auto;   
 }
 
 
@@ -44,8 +76,6 @@ body {
 }
 
  .site-nav-list{
-     padding: 0;
-     margin: 0;
      display: flex;
      align-content:center;
  }
@@ -129,8 +159,14 @@ color: var(--accent-color);
     align-items: center;
     justify-content: flex-end;
     margin-left: 331px;
-    
 }
+
+.address{
+    margin-left: auto;
+}
+
+
+
  .address-mail, .address-tel {
     padding: 0%;
     margin: 0%;
@@ -146,6 +182,8 @@ color: var(--accent-color);
     margin-right: 50px;
     min-width: 135px;
 }
+
+
  .address-mail:hover, 
  .address-mail:focus,
  .address-tel:hover,
@@ -160,14 +198,17 @@ color: var(--accent-color);
              /*======================page-footer======================*/
                                 /*=======logo=======*/
 .footer{
-    width: 1600px;
-    background: #2F303A;  
+    background: #2F303A;
 } 
+
 .footer-container{
     display:block;
     width: 1200px;
     margin-left: 200px;
     margin-right: 200px;
+    margin-right: auto;
+    margin-left: auto;   
+
 } 
  .footer-logo-web{
     font-family: "Raleway";
@@ -206,21 +247,33 @@ color: var(--accent-color);
 
                                 /*=======contacts-down-page=======*/
 
-.address-container{
+.address-down-page{
     padding-bottom: 51px;
     margin-top: 20px;
+
+    text-decoration: none;
 }
+
 .contacts-list{
     padding: 0;
     margin: 0;
+    
+    text-decoration:none;
 }                                
 .contacts-list-item{
-    list-style-type: none;}
+    padding: 0;
+    margin: 0;
+
+    list-style-type: none;
+    text-decoration: none;
+}
                             
 .contacts-list-link-mail,.contacts-list-link-tel {
     display: block;
-    padding-bottom: 9px;
+    margin-top: 9px;
+    
     font-family: "Roboto";
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.714;
@@ -230,8 +283,9 @@ color: var(--accent-color);
 }
  .contacts-list-link-address{
     display: block;
-    padding-bottom: 6px;
+
     font-family: "Roboto";
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.714;
@@ -239,6 +293,7 @@ color: var(--accent-color);
     text-decoration:none;
     color:#FFFFFF;   
 }
+
 .contacts-list-link-mail:focus,
 .contacts-list-link-mail:hover, 
 .contacts-list-link-tel:focus,
@@ -257,9 +312,11 @@ color: var(--accent-color);
 
                               /*=======filters=======*/
 .products{
-    width: 1600px;
+    width: 1200;
     padding-left: 200px;
     padding-right: 200px;
+    margin-right: auto;
+    margin-left: auto; 
     justify-content: center;
     align-content:center;
     align-items: center; 
@@ -319,7 +376,7 @@ color: var(--accent-color);
 }
                         
                              /*=======products-types=======*/
-.product-container{
+.products-container{
     width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
@@ -328,6 +385,26 @@ color: var(--accent-color);
     justify-content: center;
     align-content:center;
     align-items: center; 
+}
+
+.prod-1,.prod-2,.prod-3,
+.prod-4,.prod-5,.prod-6,
+.prod-7,.prod-8,.prod-9{
+    min-width: 322px;
+    margin-top: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 4px;
+}
+
+.prod-t-1,.prod-t-2,.prod-t-3,
+.prod-t-4,.prod-t-5,.prod-t-6,
+.prod-t-7,.prod-t-8,.prod-t-9{
+    min-width: 322px;
+    margin-top: 0px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 20px;
 }
 
 .products-types-list{
@@ -381,14 +458,22 @@ color: var(--accent-color);
 
 
                          /*=======to-order=======*/
-
-.slogan-container{
-width: 1600px;
+.slogan-section{
 background-color: #2F303A;
+text-align: center;
 text-align: center;  
 justify-content: center;
 align-content:center;
 align-items: center; 
+
+
+}
+.slogan-container{
+min-width: 1230px;
+padding-left: 15px;
+padding-right: 15px;  
+margin-right: auto;
+margin-left: auto;    
 }
 
 
@@ -432,14 +517,12 @@ border-radius: 4px;}
 .advantages-container{
     width: 1170px;
     margin-top: 109px;
-    margin-right: 215px;
-    margin-left: 215px;
+    margin-right: auto;
+    margin-left: auto; 
     margin-bottom: 94px;
 }
 
 .advantages-list{
-    padding: 0;
-    margin: 0;
     display: flex;
 }
 
@@ -471,8 +554,8 @@ color: #757575;
                               /*=======activity=======*/
 .activity-section{
 width: 1170px;
-margin-right: 215px;
-margin-left: 215px;
+margin-right: auto;
+margin-left: auto; 
 margin-top: 94px;
 margin-bottom: 94px;
 }
@@ -490,8 +573,6 @@ color: #212121;
 }
 
 .activity-list{
-    padding: 0;
-    margin: 0;
     display: flex;
 }
 .activity-list-item {
@@ -504,16 +585,12 @@ color: #212121;
                               /*=======team=======*/
 
 .team-section{
-    width: 1600px;
-    background-color: #F5F4FA;
- 
+    background-color: #F5F4FA; 
 }
 
 .team-title{
 padding-top: 94px;
-
 margin-top: 0;   
-margin-bottom: 50; 
 min-width: 264px; 
 
 font-family: Roboto;
@@ -529,13 +606,12 @@ color: #212121;
     display: flex;
     width: 1170px;
     padding-bottom: 94px;
-    margin-right: 215px;
-    margin-left: 215px; 
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto; 
     text-align: center;    
 }
 .team-list{
-    padding: 0;
-    margin: 0;
     display: flex;
 }
 .team-list-item {
@@ -547,6 +623,23 @@ color: #212121;
     margin-right: 30px;
 }    
 
+.name-container-1,.name-container-2,
+.name-container-3, .name-container-4{
+    min-width: 109px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.prof-container-1,.prof-container-2,
+.prof-container-3, .prof-container-4{
+    min-width: 147px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
 
 .team-member-name{
     font-family: Roboto;
