@@ -1,6 +1,7 @@
 :root {
 --main-color:  #212121;
 --accent-color: #2196F3;
+--card-set-gap: 30px;
 }
 body {
     color: var(--main-color);
@@ -47,9 +48,8 @@ body {
                         
                              /*=======navigation=======*/
 .header{
-    border-bottom: 1px solid #ECECEC;
     align-items: center;
-    display: flex;
+    display: flex; 
 }
 
 .header-line {
@@ -124,8 +124,8 @@ color: var(--accent-color);
 
 .logo-link { 
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 23px;
+    padding-bottom: 23px;
 
     font-family: "Raleway";
     font-weight: 700;
@@ -142,11 +142,13 @@ color: var(--accent-color);
 }
 
                              /*=======contacts-top-page=======*/
- .address{
+ .address-top{
      display: flex;
      align-items: center;
      justify-content: flex-end;
      margin-left: auto;
+     text-decoration:none;
+     font-style: normal;
  }
 
  .address-mail, .address-tel {
@@ -182,7 +184,9 @@ color: var(--accent-color);
     
     background: #2F303A;
     margin: 0;
-    padding: 0;  
+    padding: 0;
+    padding-bottom: 60px;
+    padding-top: 60px;  
 }  
 
 .footer-info{
@@ -190,15 +194,11 @@ color: var(--accent-color);
  
 }
 
-.address-contacts{
+.address{
     display: block;   
-
-    margin: 0;
-    padding: 0;
     margin-right: auto;
     
-    padding-top: 20px;
-    padding-bottom: 60px;
+    margin-top: 0px;
 }
 
  .footer-logo-web{
@@ -231,11 +231,10 @@ color: var(--accent-color);
     letter-spacing: 0.03em;
     text-decoration:none;
 
-    margin: 0;
+    margin-bottom: 20px;
     padding: 0;
 
     display: block;
-    padding-top: 60px;
 }
                             
 .footer-logo-link:hover,
@@ -288,22 +287,16 @@ color: var(--accent-color);
 
 .products{
     margin: 0;
+    padding-top: 94px;
     padding-bottom: 94px;
-    text-align: center;
-}
+    
 
-.filters-container{
-padding-bottom: 50px;
-padding-top: 94px;
-display:inline-block;
-text-align: center;
-align-items: center;
-justify-content: center;
-}   
+}
 
 .filters-list{
     padding: 0;
-    margin: 0;
+    margin-bottom: 50px;
+
     list-style-type: none;
     
     display: flex;
@@ -325,16 +318,22 @@ justify-content: center;
     background-color: #F5F4FA;
     border: rgba(0,0,0, 0.5) transparent;
 
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
     padding-top: 6px;
     padding-bottom: 6px;
     padding-right: 22px;
     padding-left: 22px;
 }
 
-.filters-list-item{
+.filters-products-btn,.filters-sites-btn,
+.filters-app-btn,.filters-design-btn{
     margin-right: 8px;
 }
-.filters-list-item:last-child{
+.filters-marketing-btn{
     margin-right: 0;
 }
 
@@ -378,24 +377,23 @@ justify-content: center;
  .products-types-list{
     padding: 0;
     margin: 0;
+
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
+
     list-style-type: none;
 
     display: flex;
     flex-wrap: wrap;
-
-    margin-left: -30px;
-    margin-top: -30px;
 }
 
 .products-card{
     border: 1px solid #EEEEEE;}
 
 .products-types-list-item{
-width: 370px;
-margin-left: 30px;
-margin-top: 30px;
-padding: 0;
-list-style-type: none;
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
 }
 
 .products-card-content{
@@ -415,7 +413,7 @@ list-style-type: none;
 
 .slogan{
 margin-top: 0;
-
+padding-top: 200px;
 text-align: center;
 background-color: #2F303A;
 }
@@ -430,12 +428,10 @@ text-align: center;
 text-transform: uppercase;
 color: #757575;
 
-padding-top: 200px;
 margin-bottom: 30px;
 
 }
 .slogan-btn-order{
-text-align: center;
 padding-top: 10px;
 padding-bottom: 10px;
 padding-right: 32px;
@@ -467,22 +463,21 @@ border-radius: 4px;}
 
     display: flex;
     flex-wrap: wrap;
-
-    margin-left: -30px;
-    margin-top: -30px;
-   
+  
 }
 
 .advantages-section{
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
 }
 
 .advantages-list-item{
 flex-basis: calc(100%/4-30px);
 margin-left: 30px;
-margin-top: 30px;
 width: 270px;
+}
+
+.advantages-list-item:first-child{
+    margin-left: 0px;  
 }
 
 .advantages-list-title{
@@ -504,7 +499,10 @@ color: #757575;
 }
 
                               /*=======activity=======*/
-
+.activity-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .activity-title{
 margin-bottom: 50px;
 
@@ -536,6 +534,8 @@ margin-left: 30px;
                               /*=======team=======*/
 .team-section{
     margin-top: 0;
+    padding-top: 94px;
+
     background-color: #F5F4FA;
 }
 .team-title{
@@ -547,7 +547,6 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
 
-padding-top: 94px;
 margin-bottom: 50px;
 }
                               
@@ -567,6 +566,10 @@ margin-bottom: 50px;
 .team-list-item{
 flex-basis: calc(100%/4-30px);
 margin-left: 30px;
+
+background-color: #fff;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 
 .team-member-name{
@@ -603,9 +606,4 @@ margin-left: 30px;
 
 .team-container{
     padding-bottom: 94px;
-}
-.team-card-thumb{
-background-color: #fff;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
 }
